@@ -13,7 +13,7 @@
             },
             "seqOntologyRef":{
                "type":"string"
-            },   
+            }
          },
          "required": [
             "id",
@@ -29,8 +29,8 @@
             },
             {
                "$ref": "#/definitions/TranscriptRegion"
-            }, 
-         ],
+            } 
+         ]
       },
       "Gene":{
          "properties":{
@@ -42,10 +42,10 @@
                         "$ref": "#/definitions/Transcript"
                      }
                   ]
-               },
+               }
             },
             "strand":{
-               "type":"string"
+               "type":"string",
                "enum":[
                   "+",
                   "-"
@@ -56,7 +56,7 @@
             }
          },
          "required": [
-            "strand",
+            "strand"
          ],
          "additionalProperties": true
       },
